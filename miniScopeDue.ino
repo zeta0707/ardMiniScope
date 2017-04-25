@@ -243,7 +243,7 @@ void loop() {
     StartSample = micros();
     
     for( int xpos = 0; xpos < grEND; xpos ++) { 
-        Sample[ xpos] = analogRead(A0)*5/102;
+        Sample[ xpos] = analogRead(A0)*33/1024;
         delayMicroseconds(dTime);
     }
     EndSample = micros();
